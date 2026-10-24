@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar"; // <-- Yahan Navbar import kiya
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kamran Yousaf Nawab | Premium Sportswear",
-  description: "Trusted manufacturer of sportswear and custom apparel.",
+  title: "Kamran Yousaf Nawab | Premium Sportswear Manufacturer",
+  description: "Trusted global manufacturer of premium sportswear, cotton wear, and custom apparel. GOAT certified cotton.",
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar /> {/* <-- Yahan Navbar add kiya */}
+        <Navbar />
         <main>{children}</main>
       </body>
     </html>
