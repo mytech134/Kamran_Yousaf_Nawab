@@ -27,6 +27,9 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 mx-auto w-full max-w-7xl px-5 py-24 sm:px-8 lg:px-12">
+          
+          {/* 👇 YAHAN SE BADA LOGO HATA DIYA HAI 👇 */}
+
           <div className="max-w-4xl">
             <div className="mb-8 flex items-center gap-3 animate-fade-up">
               <span className="h-px w-12 bg-[#C1A57B]" />
@@ -345,8 +348,18 @@ export default function Home() {
       </section>
 
       {/* ===== DEVELOPER CREDIT ===== */}
-      <div className="bg-[#121212] py-6 border-t border-white/10">
-        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12 text-center">
+      <div className="bg-[#121212] py-8 border-t border-white/10">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12 flex flex-col items-center justify-center gap-5 text-center">
+          
+          {/* Footer wala logo yahan hai */}
+          <Image 
+            src="/logo.png" 
+            alt="Kamran Yousaf Nawab Logo" 
+            width={100} 
+            height={40} 
+            className="object-contain opacity-80" 
+          />
+
           <p className="text-xs font-medium uppercase tracking-[0.25em] text-white/40">
             Designed & Developed by{" "}
             <span className="font-bold text-[#C1A57B]">Umiah Mughal</span>

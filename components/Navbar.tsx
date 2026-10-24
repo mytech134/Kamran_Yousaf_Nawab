@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image"; // 👈 Image import kiya hai
 import { useState } from "react";
 import { Menu, X, Search, User, ShoppingBag } from "lucide-react";
 import { siteConfig } from "@/data/site";
@@ -28,10 +29,18 @@ export default function Navbar() {
 
       {/* Main Navbar */}
       <nav className="bg-[#1A1A1A] px-5 py-4 sm:px-8 lg:px-12 flex items-center justify-between border-b border-white/10">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#F3F0EA] text-[#1A1A1A] font-black text-lg">
-            K
-          </div>
+        <Link href="/" className="flex items-center gap-3">
+          
+          {/* 👇 YAHAN AAPKA NAYA LOGO LAGA HAI 👇 */}
+          <Image 
+            src="/logo.png" 
+            alt="Kamran Yousaf Nawab Logo" 
+            width={40} // Agar size choti/badi karni ho toh yeh number change karein
+            height={40} 
+            className="object-contain" 
+          />
+          {/* 👆 LOGO KHATAM 👆 */}
+
           <div className="leading-tight">
             <p className="text-sm font-black text-[#F3F0EA] tracking-wider uppercase">Kamran Yousaf</p>
             <p className="text-[10px] font-bold text-[#C1A57B] tracking-widest uppercase">Nawab</p>
