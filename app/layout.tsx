@@ -1,32 +1,25 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar"; // <-- Yahan Navbar import kiya
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AttireAce — Premium Import & Export",
-  description:
-    "Connecting global markets through quality trade. B2B import & export across textiles, agriculture, leather, and more.",
+  title: "Kamran Yousaf Nawab | Premium Sportswear",
+  description: "Trusted manufacturer of sportswear and custom apparel.",
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="flex min-h-screen flex-col bg-white antialiased">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+    <html lang="en">
+      <body className={inter.className}>
+        <Navbar /> {/* <-- Yahan Navbar add kiya */}
+        <main>{children}</main>
       </body>
     </html>
   );
