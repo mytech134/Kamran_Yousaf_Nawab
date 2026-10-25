@@ -33,7 +33,11 @@ export default async function ProductPage({
 
   if (!product) notFound();
 
-  const whatsappLink = `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(
+  // FIX: phone number se spaces aur + hata kar clean kiya taake WhatsApp link kaam kare
+  const rawPhone = siteConfig.phone || "";
+  const cleanPhone = rawPhone.replace(/[^0-9]/g, ""); 
+  
+  const whatsappLink = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(
     `Hi, I'm interested in ${product.name}`
   )}`;
 
