@@ -9,22 +9,22 @@ export default function AboutPage() {
           About Us
         </span>
         <h1 className="font-serif text-4xl font-bold text-[#0a1a38] sm:text-5xl">
-          About Attire Ace Apparels
+          About Kamran Yousaf Nawab
         </h1>
         <p className="mt-6 text-base leading-relaxed text-gray-600">
-          Attire Ace Apparels is a trusted manufacturer of premium sportswear, 
-          cotton wear, and custom apparel. With GOAT certification for 
+          Kamran Yousaf Nawab is a trusted manufacturer of premium sportswear,
+          cotton wear, and custom apparel. With GOAT certification for
           high-quality cotton, we deliver unmatched quality at competitive prices.
         </p>
         <p className="mt-4 text-base leading-relaxed text-gray-600">
-          We specialize in Soccer Ball Wear, Basketball Wear, Training Wear, 
-          Cotton Wear, Sport Apparel, Football Ball Wear, Rugby Wear, GAA Wear, 
-          Hoodies & Casual Wear, and Sports Bags.
+          We specialize in Soccer Ball Wear, Basketball Wear, Training Wear,
+          Cotton Wear, Sport Apparel, Football Ball Wear, Rugby Wear, GAA Wear,
+          Hoodies &amp; Casual Wear, and Sports Bags.
         </p>
         <p className="mt-4 text-base leading-relaxed text-gray-600">
-          Whether you&apos;re outfitting a team, launching your brand, or scaling 
-          your retail business — we offer Private Label Customization, Retail & 
-          Custom Packaging, Fast Delivery (10–15 Days Production Time), Small MOQ 
+          Whether you&apos;re outfitting a team, launching your brand, or scaling
+          your retail business — we offer Private Label Customization, Retail &amp;
+          Custom Packaging, Fast Delivery (10–15 Days Production Time), Small MOQ
           Acceptance, and Unmatched Quality at Competitive Prices.
         </p>
         <Link
